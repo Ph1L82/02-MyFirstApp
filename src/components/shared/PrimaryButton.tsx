@@ -1,4 +1,4 @@
-import { Pressable, StyleSheet, Text } from "react-native"
+import { Platform, Pressable, StyleSheet, Text } from "react-native"
 interface Props {
     label: string
     onLongPress?: () => void
@@ -15,7 +15,7 @@ export const PrimaryButton = ({ onPress, onLongPress, label }: Props) => {
                 pressed && styles.buttonPressed
             ]}
         >
-            <Text style={{ color: 'white' }}>
+            <Text style={{ color: Platform.OS === 'android' ? 'white' : '#4746AB' }}>
                 {label}
             </Text>
         </Pressable>
@@ -24,12 +24,13 @@ export const PrimaryButton = ({ onPress, onLongPress, label }: Props) => {
 
 const styles = StyleSheet.create({
     button: {
-        backgroundColor: '#5856D6',
+        backgroundColor: Platform.OS === 'android' ? '#5856D6' : 'white',
         paddingHorizontal: 20,
         paddingVertical: 10,
         borderRadius: 10,
+        margin: 5
     },
     buttonPressed: {
-        backgroundColor: '#4746AB'
+        backgroundColor: Platform.OS === 'android' ? '#4746AB' : 'white'
     }
 })
