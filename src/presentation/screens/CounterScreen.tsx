@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Button, Pressable, StyleSheet, Text, View } from 'react-native'
+import { Pressable, StyleSheet, Text, View } from 'react-native'
 
 export const CounterScreen = () => {
 
@@ -8,17 +8,26 @@ export const CounterScreen = () => {
         <View style={styles.container}>
             <Text style={styles.title}>{count}</Text>
 
-            <Button
+            <Pressable
                 onPress={() => setCount(count + 1)}
-                title='+1'
-            />
+                style={styles.button}
+            >
+                <Text style={{ color: 'white' }}>
+                    Incrementar
+                </Text>
+            </Pressable>
 
             <Pressable
                 onPress={() => setCount(count - 1)}
                 onLongPress={() => setCount(0)}
+                style={({ pressed }) => [
+                    styles.button,
+                    pressed && styles.buttonPressed
+                ]}
             >
-                <Text>-1</Text>
-
+                <Text style={{ color: 'white' }}>
+                    Reducir
+                </Text>
             </Pressable>
 
         </View>
@@ -35,5 +44,14 @@ const styles = StyleSheet.create({
         fontSize: 80,
         color: 'black',
         fontWeight: '300'
+    },
+    button: {
+        backgroundColor: '#5856D6',
+        paddingHorizontal: 20,
+        paddingVertical: 10,
+        borderRadius: 10,
+    },
+    buttonPressed: {
+        backgroundColor: '#4746AB'
     }
 })
