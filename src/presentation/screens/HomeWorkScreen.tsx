@@ -15,7 +15,8 @@ const styles = StyleSheet.create({
     backgroundColor: '#28425B',
     flexDirection: 'column',
     alignItems: 'stretch',
-    justifyContent: 'center',
+    justifyContent: 'space-between',
+    paddingVertical: 20,
   },
   box: {
     width: 100,
@@ -29,9 +30,9 @@ const styles = StyleSheet.create({
   },
   orangeBox: {
     backgroundColor: '#F0A23B',
+    alignSelf: 'center',
   },
   blueBox: {
     backgroundColor: '#28C4D9',
-    alignSelf: 'center',
   },
 });
