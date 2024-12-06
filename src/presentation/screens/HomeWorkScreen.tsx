@@ -29,6 +29,7 @@ const styles = StyleSheet.create({
   },
   orangeBox: {
     backgroundColor: '#F0A23B',
+    left: 100,
   },
   blueBox: {
     backgroundColor: '#28C4D9',
