@@ -1,7 +1,7 @@
 import {PaperProvider} from 'react-native-paper';
 import {SafeAreaView} from 'react-native-safe-area-context';
 import IonIcon from 'react-native-vector-icons/Ionicons';
-import {AbsolutPositionScreen} from './src/presentation/screens/AbsolutPositionScreen';
+import {FlexDirectionsScreen} from './src/presentation/screens';
 
 export const App = () => {
   return (
@@ -10,7 +10,9 @@ export const App = () => {
         {/* <BoxObjectModelScreen /> */}
         {/* <DimenssionScreen /> */}
         {/* <RelativePositionScreen /> */}
-        <AbsolutPositionScreen />
+        {/* <AbsolutPositionScreen /> */}
+        {/* <FlexScreen /> */}
+        <FlexDirectionsScreen />
       </SafeAreaView>
     </PaperProvider>
   );
