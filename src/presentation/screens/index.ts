@@ -6,4 +6,5 @@ export * from './DimenssionScreen';
 export * from './FlexDirectionScreen';
 export * from './FlexScreen';
 export * from './HelloWorldScreen';
+export * from './HomeWorkScreen';
 export * from './RelativePositionScreen';

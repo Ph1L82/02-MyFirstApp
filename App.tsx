@@ -1,7 +1,7 @@
 import {PaperProvider} from 'react-native-paper';
 import {SafeAreaView} from 'react-native-safe-area-context';
 import IonIcon from 'react-native-vector-icons/Ionicons';
-import {FlexDirectionsScreen} from './src/presentation/screens';
+import {HomeWorkScreen} from './src/presentation/screens';
 
 export const App = () => {
   return (
@@ -12,7 +12,8 @@ export const App = () => {
         {/* <RelativePositionScreen /> */}
         {/* <AbsolutPositionScreen /> */}
         {/* <FlexScreen /> */}
-        <FlexDirectionsScreen />
+        {/* <FlexDirectionsScreen /> */}
+        <HomeWorkScreen />
       </SafeAreaView>
     </PaperProvider>
   );
