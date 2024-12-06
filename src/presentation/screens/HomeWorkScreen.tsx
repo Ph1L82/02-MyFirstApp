@@ -14,26 +14,23 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#28425B',
     flexDirection: 'column',
-    alignItems: 'stretch',
-    justifyContent: 'space-between',
+    alignItems: 'center',
+    justifyContent: 'center',
     paddingVertical: 20,
   },
   box: {
-    // width: 100,
-    // height: 100,
+    width: 100,
+    height: 100,
     borderWidth: 10,
     borderColor: 'white',
   },
   purpleBox: {
     backgroundColor: '#5856D6',
-    flex: 2,
   },
   orangeBox: {
     backgroundColor: '#F0A23B',
-    flex: 2,
   },
   blueBox: {
     backgroundColor: '#28C4D9',
-    flex: 3,
   },
 });
