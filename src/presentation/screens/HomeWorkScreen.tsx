@@ -13,24 +13,22 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#28425B',
-    flexDirection: 'column',
+    flexDirection: 'row',
     alignItems: 'stretch',
     justifyContent: 'space-between',
     paddingVertical: 20,
   },
   box: {
     width: 100,
-    height: 100,
+    // height: 100,
     borderWidth: 10,
     borderColor: 'white',
   },
   purpleBox: {
     backgroundColor: '#5856D6',
-    alignSelf: 'flex-end',
   },
   orangeBox: {
     backgroundColor: '#F0A23B',
-    alignSelf: 'center',
   },
   blueBox: {
     backgroundColor: '#28C4D9',
