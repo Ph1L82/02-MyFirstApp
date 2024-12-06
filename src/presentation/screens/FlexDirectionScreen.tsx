@@ -15,12 +15,12 @@ const styles = StyleSheet.create({
     backgroundColor: '#d1d1d1',
     flexDirection: 'row',
     justifyContent: 'space-evenly',
-    alignItems: 'stretch',
+    alignItems: 'center',
   },
   box: {
-    // width: 100,
-    // height: 100,
-    flex: 1,
+    width: 100,
+    height: 100,
+    // flex: 1,
   },
   box1: {
     backgroundColor: '#5856D6',
